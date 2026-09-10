@@ -1,8 +1,8 @@
 export const webConfig = {
-    apiKey: "AIzaSyArxSNcF0hczXe7qpy6i38dEo4tq6uOyTI",
-    authDomain: "art-judge-5c75c.firebaseapp.com",
-    projectId: "art-judge-5c75c",
-    storageBucket: "art-judge-5c75c.firebasestorage.app",
-    messagingSenderId: "272603379793",
-    appId: "1:272603379793:web:b2287bf2c49ca477c7e070"
+    apiKey: process.env.VITE_API_KEY,
+    authDomain: process.env.VITE_AUTH_DOMAIN,
+    projectId: process.env.VITE_PROJECT_ID,
+    storageBucket: process.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: process.env.VITE_MESSAGINGSENDER_ID,
+    appId: process.env.VITE_APP_ID
 };
