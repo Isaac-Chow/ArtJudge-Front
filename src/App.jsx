@@ -1,3 +1,10 @@
+/**
+ * App.jsx — Root component for ArtJudge.
+ *
+ * - Not authenticated → login screen
+ * - Authenticated     → chat interface (with streaming + chat history sidebar)
+ * - /admin-console    → admin dashboard (requires admin email)
+ */
 
 import { useState, useCallback, useRef } from "react";
 import { Routes, Route } from "react-router-dom";

@@ -7,7 +7,7 @@ const firebaseConfig = {
   apiKey: webConfig.apiKey,
   // authDomain: webConfig.authDomain || `${serviceAccount.project_id}.firebaseapp.com`,
   authDomain: webConfig.authDomain,
-  projectId: serviceAccount.project_id,
+  projectId: webConfig.project_id,
   // storageBucket: webConfig.storageBucket || `${serviceAccount.project_id}.appspot.com`,
   storageBucket: webConfig.storageBucket,
   messagingSenderId: webConfig.messagingSenderId || "",
