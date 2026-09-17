@@ -1,3 +1,11 @@
+/**
+ * MessageInput — text area with image attachment and send button.
+ *
+ * Props:
+ *   onSend({ text, image, imageBase64 }) - called when the user submits
+ *   disabled - disables input while a request is in-flight
+ */
+
 import { useState, useRef } from "react";
 
 export default function MessageInput({ onSend, disabled }) {

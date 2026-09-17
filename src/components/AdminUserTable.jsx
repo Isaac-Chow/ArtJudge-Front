@@ -1,3 +1,10 @@
+/**
+ * AdminUserTable — displays users with expandable session/message details.
+ *
+ * Fetches paginated user list, allows clicking a user to see their
+ * sessions, and clicking a session to see its messages.
+ */
+
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import {

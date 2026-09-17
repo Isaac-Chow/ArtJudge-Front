@@ -1,3 +1,13 @@
+/**
+ * MessageBubble — renders a single chat message.
+ *
+ * For agent messages that include an art_classification, a styled card
+ * is shown with the classification details.
+ *
+ * Supports live markdown rendering via react-markdown.
+ * Shows a blinking cursor while the message is still streaming.
+ */
+
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 

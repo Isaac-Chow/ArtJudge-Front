@@ -1,3 +1,10 @@
+/**
+ * ChatHistory.jsx — Sidebar showing the user's previous chat sessions.
+ *
+ * Each session displays its auto-generated title.  Clicking a session
+ * loads its message history into the main chat window.
+ */
+
 import { useState, useEffect, useCallback } from "react";
 import { getUserSessions } from "../services/api";
 import { useAuth } from "../context/AuthContext";

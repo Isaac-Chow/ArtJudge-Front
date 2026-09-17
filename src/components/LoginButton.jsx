@@ -1,3 +1,7 @@
+/**
+ * LoginButton — Google sign-in button using Firebase Auth.
+ */
+
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginButton() {
@@ -27,4 +31,3 @@ export default function LoginButton() {
     </button>
   );
 }
-

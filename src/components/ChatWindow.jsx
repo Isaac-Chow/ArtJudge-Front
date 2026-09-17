@@ -1,3 +1,7 @@
+/**
+ * ChatWindow — scrollable message list that auto-scrolls to the bottom.
+ */
+
 import { useEffect, useRef } from "react";
 import MessageBubble from "./MessageBubble";
 

@@ -1,3 +1,14 @@
+/**
+ * AuthContext — React context that wraps Firebase auth state.
+ *
+ * Provides:
+ *   user        – the current Firebase User (or null)
+ *   loading     – true while the initial auth check is running
+ *   idToken     – the latest Firebase ID token string
+ *   loginWithGoogle()  – triggers Google popup sign-in
+ *   logout()           – signs the user out
+ */
+
 import {
   createContext,
   useContext,
@@ -77,4 +88,3 @@ export function useAuth() {
   }
   return ctx;
 }
-

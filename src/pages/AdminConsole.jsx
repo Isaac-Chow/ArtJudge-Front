@@ -1,3 +1,11 @@
+/**
+ * AdminConsole — admin dashboard for ArtJudge.
+ *
+ * Route: /admin-console
+ *
+ * Access is gated by Google sign-in + email matching VITE_ADMIN_EMAIL.
+ * Displays subscribed users, their sessions, and chat messages.
+ */
 
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";

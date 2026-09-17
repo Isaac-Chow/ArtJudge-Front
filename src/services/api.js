@@ -1,5 +1,11 @@
-// const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
-const API_BASE = import.meta.env.VITE_API_URL;
+/**
+ * API service — thin wrapper around fetch calls to the ArtJudge backend.
+ *
+ * Every request includes the Firebase ID token as a Bearer header.
+ * Supports both standard JSON responses and SSE streaming.
+ */
+
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 /**
  * Internal helper: adds the auth header and handles JSON errors.
