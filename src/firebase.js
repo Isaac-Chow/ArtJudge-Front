@@ -6,7 +6,7 @@ import { webConfig } from "./firebaseWebConfig";
 const firebaseConfig = {
   apiKey: webConfig.apiKey,
   authDomain: webConfig.authDomain,
-  projectId: webConfig.project_id,
+  projectId: webConfig.projectId,
   storageBucket: webConfig.storageBucket,
   messagingSenderId: webConfig.messagingSenderId,
   appId: webConfig.appId,

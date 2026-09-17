@@ -62,10 +62,16 @@ export function AuthProvider({ children }) {
   }, [user]);
 
   const loginWithGoogle = useCallback(async () => {
-    const result = await signInWithPopup(auth, googleProvider);
-    const token = await result.user.getIdToken();
-    setUser(result.user);
-    setIdToken(token);
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const token = await result.user.getIdToken();
+      setUser(result.user);
+      setIdToken(token);
+      return null;
+    } catch (error) {
+      console.error("Google sign-in failed:", error);
+      return error;
+    }
   }, []);
 
   const logout = useCallback(async () => {
